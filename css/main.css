@@ -43,15 +43,15 @@ p.v-align.v-table.v2 {
 
 .top-container-display-table .v-align-inline {
 	display: inline-table;
-	padding: 10px
+	padding: 10px;
 }
 
 .top-container-display-table .v-align-table {
 	display: table;
-	padding: 10px
+	padding: 10px;
 }
 
-.top-container-display-table  .jumbotron {
+.top-container-display-table .jumbotron {
 	padding: 1rem 2rem;
 }
 
@@ -59,4 +59,8 @@ p.v-align.v-table.v2 {
 	border: 1px solid lightsteelblue;
 	border-radius: 3px;
 	padding: 8px;
+}
+
+.container-table {
+	margin-bottom: 10px;
 }
