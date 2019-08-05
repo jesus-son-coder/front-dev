@@ -1,0 +1,37 @@
+.top-container {
+	margin-top: 50px;
+}
+
+
+p.v-align {
+	display: inline-block;
+	width: 200px;
+	margin: 0 10px 0 0;
+	padding: 15px;
+	vertical-align: middle;
+}
+
+p.v-align.v-table {
+	display: table-cell;
+}
+
+.v1 {
+	background-color: black;
+	color:white;  
+}
+
+.v2 {
+	background-color: green;
+	color: white;	
+}
+
+.v3 {
+	background-color: orange;
+	color: black;	
+}
+
+p.v-align.v-table.v1,
+p.v-align.v-table.v2 {
+	border-right: 15px solid white;
+}
+
