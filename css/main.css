@@ -3,7 +3,7 @@
 }
 
 
-p.v-align {
+.top-container-valign p.v-align {
 	display: inline-block;
 	width: 200px;
 	margin: 0 10px 0 0;
@@ -11,7 +11,7 @@ p.v-align {
 	vertical-align: middle;
 }
 
-p.v-align.v-table {
+.top-container-valign p.v-align.v-table {
 	display: table-cell;
 }
 
@@ -35,3 +35,28 @@ p.v-align.v-table.v2 {
 	border-right: 15px solid white;
 }
 
+
+.top-container-display-table .v-align {
+	display: table;
+	padding: 10px
+}
+
+.top-container-display-table .v-align-inline {
+	display: inline-table;
+	padding: 10px
+}
+
+.top-container-display-table .v-align-table {
+	display: table;
+	padding: 10px
+}
+
+.top-container-display-table  .jumbotron {
+	padding: 1rem 2rem;
+}
+
+.align-border {
+	border: 1px solid lightsteelblue;
+	border-radius: 3px;
+	padding: 8px;
+}
