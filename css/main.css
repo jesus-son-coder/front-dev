@@ -51,6 +51,12 @@ p.v-align.v-table.v2 {
 	padding: 10px;
 }
 
+.top-container-display-table .v-align-table-row {
+	display: table-row;
+	padding: 10px;
+	border-top: 1px solid white;
+}
+
 .top-container-display-table .jumbotron {
 	padding: 1rem 2rem;
 }
