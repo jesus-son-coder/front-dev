@@ -79,3 +79,9 @@ p.v-align.v-table.v2 {
 	background-color: #ffe8a1;
 	border: 2px solid black;
 }
+
+#lumiere {
+	width: 10px;
+	height: 10px;
+	background-color: white;
+}
