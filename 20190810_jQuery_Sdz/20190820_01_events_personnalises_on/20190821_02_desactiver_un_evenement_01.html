@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+
+  <!-- Librairies de Style -->
+  <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- Style lié uniquement à cette feuille : -->
+    <style>
+        .row.picture {
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 600px;
+        }
+
+        img.pict-moses {
+            width: 100%;
+        }
+
+        .buttons-section {
+            margin-top: 20px;
+        }
+
+        #target {
+            width: 600px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- Le reste du contenu -->
+  <div class="container top-container top-container-valign">
+      <div class="row picture">
+          <img class="pict-moses" src="../../images/moses-01.JPG" alt="">
+          <div class="buttons-section">
+              <button id="activer" class="btn btn-info btn-lg">Activer le clic</button>
+              <button id="desactiver" class="btn btn-warning btn-lg">Désactiver le clic</button>
+          </div>
+      </div>
+
+
+<!--  	<div class="row">
+			<textarea id="target"></textarea>
+  		</div> -->
+  </div>
+
+  <!-- Librairies JavaScrip -->
+  <script src="../../js/jquery/jquery_3_3_1.js"></script>
+  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../../js/learn_jquery/20190820_01_events_personnalises_on/20190821_02_desactiver_un_evenement_01.js"></script>
+</body>
+</html>
