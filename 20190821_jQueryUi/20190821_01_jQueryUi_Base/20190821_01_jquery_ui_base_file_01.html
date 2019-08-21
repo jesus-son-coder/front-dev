@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Titre de la page</title>
+  <!-- Librairies de Style -->
+  <!-- ------------------- -->
+  <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/jquery-ui/jquery-ui-base-theme.css">
+  <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- Style lié uniquement à cette feuille : -->
+    <style>
+        .row.picture {
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 600px;
+        }
+
+        img.pict-moses {
+            width: 100%;
+        }
+
+        .buttons-section {
+            margin-top: 20px;
+        }
+
+        #confirmation {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- Le reste du contenu -->
+  <div class="container top-container top-container-valign">
+      <div class="row picture">
+          <img class="pict-moses" src="../../images/moses-01.JPG" alt="">
+          <div class="buttons-section">
+              <button id="activer" class="btn btn-info btn-lg">Activer le clic</button>
+              <button id="desactiver" class="btn btn-warning btn-lg">Désactiver le clic</button>
+          </div>
+      </div>
+
+  </div>
+
+  <!-- La modal de confirmation -->
+  <div id="confirmation" title="Information">
+      <p>
+          <span class="ui-icon ui-icon-alert" style="float:left; margin:3px 7px 20px 0;"></span>Vous avez cliqué sur l'image
+      </p>
+  </div>
+
+  <!-- Librairies JavaScrip -->
+  <!-- -------------------- -->
+  <!--<script src="../../js/jquery/jquery_3_3_1.js"></script> -->
+  <script src="../../js/jquery/jquery_1_11.js"></script>
+  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../../js/jquery-ui/jquery-ui.js"></script>
+  <script src="../../js/learn_jquery_ui_20190821/20190821_01_jquery_ui_base_01.js"></script>
+
+
+</body>
+</html>
