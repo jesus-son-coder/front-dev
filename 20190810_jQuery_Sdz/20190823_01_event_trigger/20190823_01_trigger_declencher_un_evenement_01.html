@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+
+  <!-- Librairies de Style -->
+  <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- Style lié uniquement à cette feuille : -->
+    <style>
+        .row.picture {
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 600px;
+        }
+
+        img.pict-moses {
+            width: 100%;
+        }
+
+        .buttons-section,
+        #message {
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+  <!-- Le reste du contenu -->
+  <div class="container top-container top-container-valign">
+      <div class="row picture">
+          <div class="col-md-12"><h2>Cliquez sur l'image</h2></div>
+          <img class="pict-moses" src="../../images/moses-01.JPG" alt="">
+          <div id="message" class="col-md-12"></div>
+          <div class="buttons-section">
+              <button id="activer" class="btn btn-info btn-lg">Cliquez ici</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- Librairies JavaScrip -->
+  <script src="../../js/jquery/jquery_3_3_1.js"></script>
+  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../../js/learn_jquery/20190823_01_event_trigger/20190823_01_trigger_declencher_un_evenement_01.js"></script>
+</body>
+</html>
