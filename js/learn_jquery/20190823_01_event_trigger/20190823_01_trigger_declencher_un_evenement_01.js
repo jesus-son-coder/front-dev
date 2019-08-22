@@ -3,12 +3,15 @@
  */
 // Déclencher un évènement grâce au "trigger" :
 $(function() {
-    $('img').click(function() {
-        $('#message').html("L'image a été cliquée").fadeIn(1000).fadeOut(1000);
+    $('img').click(function(event, texte) {
+        if(texte == undefined) {
+            texte = " par vous !";
+        }
+        $('#message').html("L'image a été cliquée" + texte).fadeIn(1000).fadeOut(2000);
     });
 
     $('#activer').click(function() {
-        $('img').trigger('click');
+        $('img').trigger('click', ' par jQuery');
     })
 
 })
