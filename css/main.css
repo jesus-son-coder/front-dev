@@ -90,3 +90,7 @@ p.v-align.v-table.v2 {
 #confirmation {
 	display: none;
 }
+
+.picture {
+	width: 100%;
+}
