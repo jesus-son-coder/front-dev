@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Ajax</title>
+
+  <!-- Librairies de Style -->
+  <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- Style lié uniquement à cette feuille : -->
+    <style>
+        .bloc-div {
+            width: 400px;
+            height: 300px;
+            float: left;
+            margin: 5px;
+        }
+
+        .bloc-div:not(#deuxieme) {
+            padding: 15px;
+        }
+
+        #premier {
+            background-color: #F6E497;
+        }
+
+        #deuxieme {
+            overflow: hidden;
+        }
+
+        #troisieme {
+            background-color: #CAF1EC;
+        }
+
+        #quatrieme {
+            background-color: #F1DBCA;
+        }
+
+    </style>
+
+</head>
+<body>
+
+  <!-- Le reste du contenu -->
+  <div class="container top-container top-container-valign">
+      <div class="col-xs-12 button-zone">
+          <button id="majPremier">Mise à jour première zone.</button>
+          <button id="majDeuxieme">Mise à jour deuxième zone.</button>
+          <br/>
+          <button id="comeback1">Come back première zone.</button>
+          <button id="comeback2">Come back deuxième zone.</button>
+      </div>
+
+      <div id="premier" class="col-xs-12 bloc-div">
+          Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.
+      </div>
+
+      <div id="deuxieme" class="col-xs-12 bloc-div">
+          <img id="deuxiemePicture" class="picture" src="../../images/prairie-01.JPG" alt="">
+      </div>
+
+      <div id="troisieme" class="col-xs-12 bloc-div">
+          Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro consule missae sub iugum factae sunt vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo monte Amano disparantur.
+      </div>
+
+      <div id="quatrieme" class="col-xs-12 bloc-div">
+          Itaque tum Scaevola cum in eam ipsam mentionem incidisset, exposuit nobis sermonem Laeli de amicitia habitum ab illo secum et cum altero genero, C. Fannio Marci filio, paucis diebus post mortem Africani. Eius disputationis sententias memoriae mandavi, quas hoc libro exposui.
+      </div>
+
+      
+  </div>
+
+  <!-- Librairies JavaScrip -->
+  <script src="../../js/jquery/jquery_3_3_1.js"></script>
+  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../../js/learn_jquery/20190824_01_ajax/20190823_01_ajax_load.js"></script>
+
+  <script>
+      $(function() {
+          var beforePremier = $('#premier').html();
+
+          $('#majPremier').click(function() {
+              $('#premier').load('maj3.html #modif1', function() {
+                  console.log('La première zone a été mise à jour !');
+              })
+          });
+
+          $('#majDeuxieme').click(function() {
+              $('#deuxieme').load('maj3.html #deuxiemePicture', function() {
+                  console.log('La deuxième zone a été mise à jour !');
+              })
+          });
+
+
+          // Revenir à l'état initial pour le bloc #premier :
+          $('#comeback1').click(function() {
+              $('#premier').html(beforePremier);
+          })
+
+          // Revenir à l'état initial pour le bloc #deuxieme :
+          $('#comeback2').click(function() {
+              $('#deuxiemePicture').attr("src","../../images/prairie-01.JPG");
+          })
+      });
+  </script>
+</body>
+</html>
