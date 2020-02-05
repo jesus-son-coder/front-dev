@@ -16,7 +16,7 @@
         /* ********************** */
         /* Contrôler la Direction */
         /* ********************** */ 
-        flex-direction: row;
+        /* lex-direction: row; */
         /* flex-direction: row-reverse; */
         /* flex-direction: column; */
         /* flex-direction: column-reverse; */
@@ -26,12 +26,20 @@
         /* Contrôler le Retour à la ligne */
         /* ****************************** */
         /* flex-wrap: nowrap; */
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         /* flex-wrap: wrap-reverse; */
 
         /* Raccourci pour les 2 instructions : */
         flex-flow: row wrap;
 
+        /* *********************************************************** */
+        /* Gérer l'espace restant (sur l'axe principal) dans un bloc : */
+        /* *********************************************************** */
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
 
       }
   </style>
@@ -39,24 +47,24 @@
 </head>
 <body>
 
-  <!-- Le reste du contenu -->
-  <div class="container">
+    <!-- Le reste du contenu -->
+    <div class="container">
     <h1>Comprendre les Flexbox</h1>
     <ul>
-      <li>Un</li>
-      <li>Deux</li>
-      <li class="main">Trois</li>
-      <li>Quatre</li>
-      <li>Cinq</li>
-
-      <li>Six</li>
-      <li>Sept</li>
-      <li>Huit</li>
-      <li>Neuf</li>
-      <li>Dix</li>
-
+        <li>Un</li>
+        <li>Deux</li>
+        <li class="main">Trois</li>
+        <li>Quatre</li>
+        <li>Cinq</li>
+        <!--
+        <li>Six</li>
+        <li>Sept</li>
+        <li>Huit</li>
+        <li>Neuf</li>
+        <li>Dix</li>
+        -->
     </ul>
-  </div>
+    </div>
 
   <!-- Librairies JavaScript -->
   <!-- --------------------- -->
