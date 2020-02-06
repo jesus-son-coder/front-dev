@@ -49,12 +49,26 @@
         /* Gérer l'espace restant (sur l'axe secondaire) dans un bloc : */
         /* ************************************************************ */
         align-items: stretch;
-        align-items: flex-start;
         align-items: flex-end;
         align-items: center;
-        /* "baseline": 
-            Les éléments sont alignés verticalement en se basant sur l'alignement du texte de chaque blocs : */
-        align-items: baseline; 
+        align-items: baseline;
+        align-items: flex-start;
+
+
+        /* ****************************************** */
+        /* Positionner plusieurs lignes d'éléments :  */
+        /* ****************************************** */
+        /* Différence entre "align-content" et "align-items" :
+           --------------------------------------------------
+            "align-content" prévaut lorsque nous avons au moins deux lignes d'éléments.
+            Dans le cas où il n'y a qu'une seule ligne, vous pouvez utiliser "align-items" !
+        */
+        align-content: stretch;
+        align-content: flex-start;
+        align-content: flex-end;
+        align-content: center;
+        align-content: space-between;
+        align-content: space-around;
 
       }
 
@@ -76,17 +90,17 @@
     <h1>Comprendre les Flexbox</h1>
     <ul>
         <li>Un</li>
-        <li class="big">Deux</li>
+        <li>Deux</li>
         <li>Trois</li>
-        <li class="small">Quatre</li>
+        <li>Quatre</li>
         <li>Cinq</li>
-        <!--
+        
         <li>Six</li>
         <li>Sept</li>
         <li>Huit</li>
         <li>Neuf</li>
         <li>Dix</li>
-        -->
+        
     </ul>
     </div>
 
