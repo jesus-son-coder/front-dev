@@ -1,11 +1,10 @@
 // DECLARATION :
-const demarre = new Promise((resolve, reject) => {
+const calcul = new Promise((resolve, reject) => {
     // ...
-    const isRunning = true;
-    // const isRunning = false;
+    const result = 200 * 120;
 
-    if(isRunning === true) {
-        resolve();
+    if(result) {
+        resolve(result);
     } else {
         reject();
     }
@@ -14,8 +13,8 @@ const demarre = new Promise((resolve, reject) => {
 
 
 // UTILISATION :
-demarre.then(() => {
-    console.log('good !');
+calcul.then((result) => {
+    console.log('Resultat: ' + result);
 }).catch(() => {
     console.log('Oups, une erreur !')
 })
