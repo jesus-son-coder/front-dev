@@ -52,7 +52,13 @@ nav ul ul {
     background: rgba(155, 39, 176, .4);
     border-radius: 5px;
     /* box-shadow: 2px 2px 10px rgba(0, 0, 0, .1); */
-    box-shadow: 5px 7px 10px rgba(0, 0, 0, .1);
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, .7);
+}
+
+nav ul span {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
 }
 
 nav ul .dropdown {
