@@ -65,6 +65,16 @@ nav ul .dropdown {
     position: relative;
 }
 
-nav ul .dropdown:hover ul {
+nav ul .dropdown:hover > ul {
+    display: initial;
+}
+
+nav ul .dropdown_two ul {
+    position: absolute;
+    left: 200px;
+    top:O;
+}
+
+nav ul .dropdown_two:hover ul {
     display: initial;
 }
