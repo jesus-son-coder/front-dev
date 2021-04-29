@@ -1,0 +1,101 @@
+body {
+    background: #d0d6df;
+    font-family: "Raleway";
+}
+
+
+.menu {
+    background: #fff;
+    display: table;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    width: 200px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li:nth-of-type(2) {
+    border-bottom: 2px solid #eee;
+}
+
+.menu ul li:last-of-type {
+    border-top: 2px solid #eee;
+}
+
+.menu ul li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 8px 24px;
+    margin: 3px 0;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.menu ul li a i {
+    margin-right: 8px;
+    /* color: #d0d6df; */
+    color: #959ead;
+    font-weight: 700;
+}
+
+.menu ul li:hover a {
+    background: #f7f7f7;
+}
+
+.menu ul li.droped {
+    background: #f7f7f7;
+}
+
+.menu ul li.droped > a:before {
+    content:"\e606";
+    font-family: 'simple-line-icons';
+    position: absolute;
+    right: 18px;
+    font-size: 12px;
+    top:12px;
+}
+
+/*
+.menu ul li.droped ul li a:before {
+    content:none;
+} */
+
+.menu ul li.droped ul {
+    position: absolute;
+    left: 160px;
+    top: 0;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    padding: 12px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.menu ul li.droped ul li a {
+    background: #fff;
+}
+
+.menu ul li.droped ul li {
+    border:0;
+}
+
+.menu ul li.droped ul li:hover a {
+    background: #f7f7f7;
+}
+
+.menu ul li.droped:hover ul {
+    visibility: visible;
+    opacity: 1;
+    left: 190px;
+}
